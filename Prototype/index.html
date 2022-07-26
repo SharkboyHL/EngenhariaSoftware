@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css " href="main.css">
+    <title>Protótipo</title>
+</head>
+<body>
+    <main>
+
+        <div>
+            <h1 id="titulo">CADASTRO USUÁRIOS</h1>
+            <p id="subtitulo">Coloque suas informações abaixo</p>
+            <br>
+        </div>
+
+        <form>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome"><strong>Nome:</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+
+            <div class="campo">
+                <label for="email"><strong>E-mail:</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            </fieldset>
+            
+            <fieldset>
+            <div class="campo">
+                <label>Qual é o seu gênero ?</label>
+                <label>
+                    <input type="radio" name="genero" value="masculino" checked>Masculino
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="feminino">Feminino
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="null">Prefiro não identificar
+                </label>
+
+                <div class="campo">    
+                    <label for="idade"><strong>Sua idade</strong></label>
+                    <select id="idade">
+                        <option selected disabled value="">Selecione</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                    </select>
+                </div>
+                </fieldset>
+                
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label>Selecione as disciplinas que você mais gosta</label><br><br>
+                        <input type="checkbox" name="disciplina1" id="disciplina1" value="matematica">
+                        <label for="disciplina1">Matemática</label>
+                        <input type="checkbox" name="disciplina2" id="disciplina2" value="portugues">
+                        <label for="disciplina2">Português</label>
+                        <input type="checkbox" name="disciplina3" id="disciplina3" value="historia">
+                        <label for="disciplina3">História</label>
+                        <input type="checkbox" name="disciplina4" id="disciplina4" value="biologia">
+                        <label for="disciplina4">Biologia</label>
+                        <input type="checkbox" name="disciplina5" id="disciplina5" value="fisica">
+                        <label for="disciplina5">Física</label>
+                        <input type="checkbox" name="disciplina6" id="disciplina6" value="quimica">
+                        <label for="disciplina6">Química</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <br>
+                        <label>Me conte sobre você...</label>
+                        <textarea row="6" style="width: 26em" name="texte" id="texto"></textarea>
+                    </div>
+                </fieldset>
+            </div>
+            <br>
+
+            <button class="botao" type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
